@@ -1,0 +1,19 @@
+**Minikube - tool for configure Kubectl**
+Basic manual  https://minikube.sigs.k8s.io/docs/handbook/controls/
+minikube config set driver virtualbox //Установить на основе чего будт работать k8s: docker, virtualbox etc https://minikube.sigs.k8s.io/docs/drivers/
+
+minikube start    //start local Master cluster k8s with default params
+minikube start --cpu=4 --memory=8gb --disk-size=25gb
+
+minikube start -p MySuperClusterName    //Start a second local cluster 
+minikube stop
+minikube delete   //Delete your local cluster
+minikube ssh      //open minikube image CLI
+
+
+kubectl version
+kubectl get componentstatus
+kubectl cluster-info
+kubectl get nodes
+
+
